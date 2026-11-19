@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>geodesic-cert-lab</title>
+<style>
+  html,body{margin:0;height:100%;background:#0b0f17;color:#e8eef7;font:14px/1.45 ui-monospace,SFMono-Regular,Menlo,monospace;overflow:hidden}
+  canvas{display:block}
+  #panel{position:fixed;top:14px;left:14px;width:360px;padding:14px 16px;background:rgba(12,18,28,.88);border:1px solid #22303f;border-radius:10px;backdrop-filter:blur(6px)}
+  h1{font-size:15px;margin:0 0 6px;letter-spacing:.4px}
+  .muted{color:#8fa3b8;font-size:12px}
+  select,input[type=range]{width:100%;margin:8px 0 4px;background:#101826;color:#e8eef7;border:1px solid #2a3a4c;border-radius:6px;padding:4px}
+  #live,#cert{margin-top:8px;font-size:12px;padding:6px 8px;border-radius:6px;background:#101826}
+  .ok{color:#7ee2a8}.bad{color:#ff8b8b}
+  #legend{position:fixed;right:16px;bottom:16px;width:220px;font-size:11px;color:#8fa3b8}
+  #legend .bar{height:10px;border-radius:5px;background:linear-gradient(90deg,#1d4ed8,#06b6d4,#fde047,#ef4444);margin:4px 0}
+</style>
+<script type="importmap">
+{"imports":{"three":"https://unpkg.com/three@0.170.0/build/three.module.js"}}
+</script>
+</head>
+<body>
+<div id="panel">
+  <h1>geodesic-cert-lab</h1>
+  <div class="muted">Surface geodesic distance by sampled portal graph. The browser recomputes the error against the closed-form oracle and compares it with the node-certified number.</div>
+  <select id="mesh" aria-label="mesh"></select>
+  <div class="muted">sampling k = <span id="kval">4</span> (1 = plain edge graph)</div>
+  <input id="k" type="range" min="1" max="6" step="1" value="4" />
+  <div id="title" class="muted"></div>
+  <div id="live">computing…</div>
+  <div id="cert">computing…</div>
+</div>
+<div id="legend">distance from source<div class="bar"></div>0 → max (drag to orbit, wheel to zoom)</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

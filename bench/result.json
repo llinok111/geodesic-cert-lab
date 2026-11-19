@@ -1,0 +1,377 @@
+{
+  "generatedAt": "2026-11-19T08:27:11.174Z",
+  "runtime": {
+    "node": "v24.19.0",
+    "platform": "linux"
+  },
+  "corpus": {
+    "meshes": 9,
+    "vertices": 8881,
+    "triangles": 17184,
+    "families": [
+      "sphere",
+      "cylinder",
+      "plane"
+    ],
+    "scalesTested": [
+      0.000001,
+      0.001,
+      1,
+      1000,
+      1000000
+    ]
+  },
+  "accuracy": [
+    {
+      "k": 1,
+      "aggregateMeanAbsRelPct": 13.06141,
+      "worstPairAbsRelPct": 41.421356,
+      "pairs": 26604,
+      "undershootPairs": 887,
+      "perMesh": [
+        {
+          "label": "sphere(subdiv=2,R=1)",
+          "meanAbsRelPct": 5.540257,
+          "maxAbsRelPct": 21.078482,
+          "pairs": 483,
+          "undershootPairs": 91
+        },
+        {
+          "label": "sphere(subdiv=3,R=1)",
+          "meanAbsRelPct": 6.333532,
+          "maxAbsRelPct": 21.379452,
+          "pairs": 1923,
+          "undershootPairs": 79
+        },
+        {
+          "label": "sphere(subdiv=4,R=1)",
+          "meanAbsRelPct": 7.043957,
+          "maxAbsRelPct": 22.931584,
+          "pairs": 7683,
+          "undershootPairs": 66
+        },
+        {
+          "label": "cylinder(seg=24,rows=8,R=1)",
+          "meanAbsRelPct": 13.86297,
+          "maxAbsRelPct": 41.177429,
+          "pairs": 645,
+          "undershootPairs": 93
+        },
+        {
+          "label": "cylinder(seg=48,rows=15,R=1)",
+          "meanAbsRelPct": 14.438643,
+          "maxAbsRelPct": 41.365353,
+          "pairs": 2301,
+          "undershootPairs": 186
+        },
+        {
+          "label": "cylinder(seg=96,rows=31,R=1)",
+          "meanAbsRelPct": 14.448557,
+          "maxAbsRelPct": 41.404996,
+          "pairs": 9201,
+          "undershootPairs": 372
+        },
+        {
+          "label": "plane(n=8)",
+          "meanAbsRelPct": 17.796862,
+          "maxAbsRelPct": 41.421356,
+          "pairs": 240,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=16)",
+          "meanAbsRelPct": 18.82926,
+          "maxAbsRelPct": 41.421356,
+          "pairs": 864,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=32)",
+          "meanAbsRelPct": 19.258648,
+          "maxAbsRelPct": 41.421356,
+          "pairs": 3264,
+          "undershootPairs": 0
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "aggregateMeanAbsRelPct": 2.551414,
+      "worstPairAbsRelPct": 8.682901,
+      "pairs": 26604,
+      "undershootPairs": 1528,
+      "perMesh": [
+        {
+          "label": "sphere(subdiv=2,R=1)",
+          "meanAbsRelPct": 0.733666,
+          "maxAbsRelPct": 2.781558,
+          "pairs": 483,
+          "undershootPairs": 163
+        },
+        {
+          "label": "sphere(subdiv=3,R=1)",
+          "meanAbsRelPct": 1.243986,
+          "maxAbsRelPct": 4.312332,
+          "pairs": 1923,
+          "undershootPairs": 145
+        },
+        {
+          "label": "sphere(subdiv=4,R=1)",
+          "meanAbsRelPct": 1.421107,
+          "maxAbsRelPct": 4.920838,
+          "pairs": 7683,
+          "undershootPairs": 167
+        },
+        {
+          "label": "cylinder(seg=24,rows=8,R=1)",
+          "meanAbsRelPct": 2.892775,
+          "maxAbsRelPct": 8.682901,
+          "pairs": 645,
+          "undershootPairs": 153
+        },
+        {
+          "label": "cylinder(seg=48,rows=15,R=1)",
+          "meanAbsRelPct": 3.401493,
+          "maxAbsRelPct": 8.38952,
+          "pairs": 2301,
+          "undershootPairs": 297
+        },
+        {
+          "label": "cylinder(seg=96,rows=31,R=1)",
+          "meanAbsRelPct": 3.421329,
+          "maxAbsRelPct": 8.39629,
+          "pairs": 9201,
+          "undershootPairs": 603
+        },
+        {
+          "label": "plane(n=8)",
+          "meanAbsRelPct": 2.856186,
+          "maxAbsRelPct": 8.231175,
+          "pairs": 240,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=16)",
+          "meanAbsRelPct": 3.389168,
+          "maxAbsRelPct": 8.238983,
+          "pairs": 864,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=32)",
+          "meanAbsRelPct": 3.603012,
+          "maxAbsRelPct": 8.238983,
+          "pairs": 3264,
+          "undershootPairs": 0
+        }
+      ]
+    },
+    {
+      "k": 4,
+      "aggregateMeanAbsRelPct": 0.812962,
+      "worstPairAbsRelPct": 2.777641,
+      "pairs": 26604,
+      "undershootPairs": 1808,
+      "perMesh": [
+        {
+          "label": "sphere(subdiv=2,R=1)",
+          "meanAbsRelPct": 0.333832,
+          "maxAbsRelPct": 0.867538,
+          "pairs": 483,
+          "undershootPairs": 435
+        },
+        {
+          "label": "sphere(subdiv=3,R=1)",
+          "meanAbsRelPct": 0.372834,
+          "maxAbsRelPct": 1.114315,
+          "pairs": 1923,
+          "undershootPairs": 153
+        },
+        {
+          "label": "sphere(subdiv=4,R=1)",
+          "meanAbsRelPct": 0.529767,
+          "maxAbsRelPct": 1.289572,
+          "pairs": 7683,
+          "undershootPairs": 167
+        },
+        {
+          "label": "cylinder(seg=24,rows=8,R=1)",
+          "meanAbsRelPct": 0.801033,
+          "maxAbsRelPct": 2.762223,
+          "pairs": 645,
+          "undershootPairs": 153
+        },
+        {
+          "label": "cylinder(seg=48,rows=15,R=1)",
+          "meanAbsRelPct": 1.040909,
+          "maxAbsRelPct": 2.741981,
+          "pairs": 2301,
+          "undershootPairs": 297
+        },
+        {
+          "label": "cylinder(seg=96,rows=31,R=1)",
+          "meanAbsRelPct": 1.082142,
+          "maxAbsRelPct": 2.777641,
+          "pairs": 9201,
+          "undershootPairs": 603
+        },
+        {
+          "label": "plane(n=8)",
+          "meanAbsRelPct": 0.867489,
+          "maxAbsRelPct": 2.739739,
+          "pairs": 240,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=16)",
+          "meanAbsRelPct": 1.093199,
+          "maxAbsRelPct": 2.747332,
+          "pairs": 864,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=32)",
+          "meanAbsRelPct": 1.195452,
+          "maxAbsRelPct": 2.748602,
+          "pairs": 3264,
+          "undershootPairs": 0
+        }
+      ]
+    },
+    {
+      "k": 6,
+      "aggregateMeanAbsRelPct": 0.362087,
+      "worstPairAbsRelPct": 1.313232,
+      "pairs": 26604,
+      "undershootPairs": 3231,
+      "perMesh": [
+        {
+          "label": "sphere(subdiv=2,R=1)",
+          "meanAbsRelPct": 0.584557,
+          "maxAbsRelPct": 0.93214,
+          "pairs": 483,
+          "undershootPairs": 483
+        },
+        {
+          "label": "sphere(subdiv=3,R=1)",
+          "meanAbsRelPct": 0.069157,
+          "maxAbsRelPct": 0.317409,
+          "pairs": 1923,
+          "undershootPairs": 771
+        },
+        {
+          "label": "sphere(subdiv=4,R=1)",
+          "meanAbsRelPct": 0.178277,
+          "maxAbsRelPct": 0.585189,
+          "pairs": 7683,
+          "undershootPairs": 304
+        },
+        {
+          "label": "cylinder(seg=24,rows=8,R=1)",
+          "meanAbsRelPct": 0.296054,
+          "maxAbsRelPct": 1.210986,
+          "pairs": 645,
+          "undershootPairs": 305
+        },
+        {
+          "label": "cylinder(seg=48,rows=15,R=1)",
+          "meanAbsRelPct": 0.419861,
+          "maxAbsRelPct": 1.275713,
+          "pairs": 2301,
+          "undershootPairs": 447
+        },
+        {
+          "label": "cylinder(seg=96,rows=31,R=1)",
+          "meanAbsRelPct": 0.458021,
+          "maxAbsRelPct": 1.313232,
+          "pairs": 9201,
+          "undershootPairs": 921
+        },
+        {
+          "label": "plane(n=8)",
+          "meanAbsRelPct": 0.298453,
+          "maxAbsRelPct": 1.289902,
+          "pairs": 240,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=16)",
+          "meanAbsRelPct": 0.444382,
+          "maxAbsRelPct": 1.307221,
+          "pairs": 864,
+          "undershootPairs": 0
+        },
+        {
+          "label": "plane(n=32)",
+          "meanAbsRelPct": 0.510019,
+          "maxAbsRelPct": 1.308099,
+          "pairs": 3264,
+          "undershootPairs": 0
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "name": "plain edge graph + Bellman-Ford (baseline/naive.mjs)",
+    "mesh": "sphere(subdiv=2,R=1)",
+    "meanAbsRelPct": 5.540257,
+    "pairCount": 483,
+    "oracleVsCoreK1MaxAbsDiff": 0
+  },
+  "improvement": {
+    "metric": "aggregate mean absolute relative error, k=1 vs k=6",
+    "k1Pct": 13.06141,
+    "k6Pct": 0.362087,
+    "factor": 36.073
+  },
+  "scaleInvariance": {
+    "baseMeanAbsRelPct": 0.333831816,
+    "runs": [
+      {
+        "scale": 0.000001,
+        "meanAbsRelPct": 0.333831816
+      },
+      {
+        "scale": 0.001,
+        "meanAbsRelPct": 0.333831819
+      },
+      {
+        "scale": 1,
+        "meanAbsRelPct": 0.333831816
+      },
+      {
+        "scale": 1000,
+        "meanAbsRelPct": 0.333831817
+      },
+      {
+        "scale": 1000000,
+        "meanAbsRelPct": 0.333831817
+      }
+    ],
+    "maxDeviationPctPoints": 3e-9
+  },
+  "timing": {
+    "workload": "evaluate(sphere(subdiv=3), k=6, 3 sources)",
+    "coldMs": 66.345,
+    "samples": [
+      98.295,
+      77.479,
+      87.603,
+      98.889,
+      105.006,
+      60.37,
+      53.741
+    ],
+    "sampleCount": 7,
+    "minMs": 53.741,
+    "medianMs": 87.603,
+    "p95Ms": 105.006,
+    "meanMs": 83.055,
+    "stddevMs": 18.48,
+    "rsdPct": 22.25
+  },
+  "determinism": {
+    "fingerprint": "6005f74d",
+    "note": "FNV-1a over 9-decimal distances; reproduced in verify.mjs"
+  }
+}
